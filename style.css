@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: light) {
     :root {
   /* light-color */
-  --background: "blue";
+  --background: #FFF;
   --text: #222222;
   --border: #7e7e7e;
     }
@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
   /* dark-color */
-  --background: "black";
+  --background: #0a0a0a;
   --text: #FFF;
   --border: #c2c2c2;
     }
