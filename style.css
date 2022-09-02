@@ -9,9 +9,30 @@
   font-size: 16px;
 
   /* light-color */
+  /* --background: "blue";
+  --text: #222222;
+  --border: 'red'; */
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+  /* light-color */
   --background: "blue";
   --text: #222222;
+  --border: #7e7e7e;
+    }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+  /* dark-color */
+  --background: "black";
+  --text: #FFF;
+  --border: #c2c2c2;
+    }
+}
+
 
 html {
   background: var(--background);
@@ -33,7 +54,7 @@ html {
   margin: 1rem;
   padding: 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #7e7e7e;
+  border: 1px solid var(--border);
 }
 
 @media screen and (max-width: 900px) {
@@ -52,7 +73,7 @@ html {
 
 img {
   border-radius: 0.5rem;
-  border: 1px solid #7e7e7e;
+  border: 1px solid var(--background);
   flex-shrink: 0;
   max-width: 15rem;
   max-height: 15rem;
