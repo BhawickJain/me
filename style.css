@@ -37,6 +37,7 @@
 }
 
 
+body
 html {
   background: var(--background);
   color: var(--text);
